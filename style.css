@@ -238,3 +238,139 @@ h1 {
 	margin-bottom: 0px;
 }
 
+/*RMS*/
+
+#latest_articles{
+	background-image: linear-gradient(to right, grey 33%, rgba(255,255,255,0) 0%);
+	background-position: top;
+	background-size: 40px 2px;
+	background-repeat: repeat-x;
+	margin-top: 20px;
+	padding-top: 5px;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial Narrow, 'Tahoma', 'Helvetica Neue', Helvetica;
+}
+
+.mini_article{
+	display:table;
+	width: 100%;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #e6e6e6;
+}
+#latest_articles h2{
+	font-size: 30px; 
+}
+
+.mini_article a{
+	text-decoration: none;
+}
+.mini_article img{
+	position: relative;
+	display: table-cell;
+	width:300px;
+	height:200px;
+	object-fit: cover;
+	margin: 0;
+	padding: 0;
+}
+.mini_article_text{
+	position: relative;
+	vertical-align: top;
+	padding-left: 20px;
+	padding-top: 20px;
+	display: table-cell;
+	margin:0px;
+}
+.mini_article_text h3{
+	margin: 0;
+}
+.mini_article_text h5{
+	margin: 0;
+}
+.mini_article_text p{
+/*	position: absolute;
+	bottom: 0;*/
+	display: inline-block;
+	vertical-align: bottom;
+	bottom: 0;
+	color: ;
+	padding-top: 70px;
+}
+
+.author{
+	position: relative;
+	display: inline-block;
+}
+.author img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.author_bio{
+	display: none;
+	z-index: 1;
+	width:200px;
+	height:200px;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	background-color: rgba(102, 0, 0, .6);
+	color: #fff;
+}
+#author_container{
+	padding-top: 40px;
+}
+#nav_bar_button{
+	display: none;
+	position:absolute;
+	bottom:0;
+	padding-bottom: 60px;
+	right: 0;
+}
+#nav_links{
+	display: none;
+}
+#nav_links ul{
+	list-style-type: none;
+	text-align: center;
+}
+#nav_links a{
+	display: block;
+	padding-top: 10px;
+	padding-right: 50px;
+	width: 100%;
+	height: 40px;
+	text-decoration: none;
+	background-color: #660000;
+	color: #fff;
+}
+
+/*mobile*/
+@media screen and (max-width: 1024px) {
+    .sidebar{
+        display: none;
+    }
+
+    #calender{
+    	display: none;
+    }
+    #categories{
+    	display: none;
+    }
+    #funnyGirls{
+    	display: none;
+    }
+    #about{
+    	display: none;
+    }
+    #nav_bar_button{
+    	display:block;
+    }
+}
